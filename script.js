@@ -64,18 +64,18 @@ hold.addEventListener('click',function(){
         score2.innerText=parseInt(score2.innerText)+parseInt(current2.textContent);
         if(parseInt(score1.innerText)>=winningScore){
             player1.classList.add('player--winner');
-            dice.classList.add('hidden');
+            
             winner=1;
         }
         else if(parseInt(score2.innerText)>=winningScore){
             player2.classList.add('player--winner');
-            dice.classList.add('hidden');
             winner=1;
         }
         current1.innerText='0';
         current2.innerText='0';
         player1.classList.toggle('player--active');
         player2.classList.toggle('player--active');
+        dice.classList.add('hidden');
         activePlayer=(activePlayer+1)%2;
     }
 });
