@@ -24,7 +24,7 @@ body {
   justify-content: center;
 }
 
-main {
+.main-div {
   position: relative;
   width: 100rem;
   height: 60rem;
