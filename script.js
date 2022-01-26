@@ -25,6 +25,7 @@ const intialise=function(){
     player1.classList.remove('player--winner');
     player2.classList.remove('player--winner');
     winner=0;
+    activePlayer=0;
 }
 intialise();
 newGame.addEventListener("click",intialise);
@@ -64,7 +65,6 @@ hold.addEventListener('click',function(){
         score2.innerText=parseInt(score2.innerText)+parseInt(current2.textContent);
         if(parseInt(score1.innerText)>=winningScore){
             player1.classList.add('player--winner');
-            
             winner=1;
         }
         else if(parseInt(score2.innerText)>=winningScore){
